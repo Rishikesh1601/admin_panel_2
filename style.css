@@ -1,0 +1,201 @@
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-x:hidden;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    transition: width 0.3s ease;
+}
+
+.sidebar:hover {
+    width: 260px;
+}
+
+.sidebar .logo {
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 15px;
+}
+
+.logo img {
+    width: 43px;
+    border-radius: 50%;
+}
+
+.logo h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-left: 15px;
+    display: none;
+}
+
+.sidebar:hover .logo h2 {
+    display: block;
+}
+
+.sidebar .links {
+    list-style: none;
+    margin-top: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    height: calc(100% - 140px);
+}
+
+.sidebar .links::-webkit-scrollbar {
+    display: none;
+}
+
+.links li {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.links li:hover {
+    cursor: pointer;
+    background: #fff;
+}
+.active{
+    background-color: #fff;
+}
+.active h4{
+    color: #222;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+}
+.links h4 {
+    color: #222;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.sidebar:hover .links h4 {
+    display: block;
+}
+
+.links hr {
+    margin: 10px 8px;
+    border: 1px solid #4c4c4c;
+}
+
+.sidebar:hover .links hr {
+    border-color: transparent;
+}
+
+.links li span {
+    padding: 12px 10px;
+}
+
+.links li a {
+    padding: 10px;
+    color: #000;
+    display: none;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar:hover .links li a {
+    display: block;
+}
+
+.links .logout-link {
+    margin-top: 20px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    z-index: 1000;
+    box-shadow: 0 0 2px var(--grey-color-light);
+  }
+  .logo_item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    color: green;
+  }
+  .navbar img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .search_bar {
+    height: 47px;
+    max-width: 430px;
+    width: 100%;
+  }
+  .search_bar input {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 18px;
+    outline: none;
+    background-color: var(--white-color);
+    color: var(--grey-color);
+    border: 1px solid var(--grey-color-light);
+    padding: 0 20px;
+  }
+  .navbar_content {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+  }
+  .navbar_content i {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--grey-color);
+  }
+  
+.mainContent{
+    margin-top:100px;
+    padding-left:270px;
+  }
+  
+  .display-1{
+    font-size: 40px;
+  }
+  
+  .mainHeading{
+    display: flex;
+    gap:20px;
+  }
